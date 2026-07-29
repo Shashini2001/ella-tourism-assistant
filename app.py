@@ -21,6 +21,7 @@ IMAGE_DIR = Path(__file__).resolve().parent / "image"
 BG_IMAGE_PATH = IMAGE_DIR / "hero-bg.jpg"
 LOGO_IMAGE_PATH = IMAGE_DIR / "logo.png"
 MASCOT_IMAGE_PATH = IMAGE_DIR / "mascot.png"
+ABOUT_IMAGE_PATH = IMAGE_DIR / "about-guide.png"
 
 @st.cache_data
 def get_base64_image(path: Path) -> str | None:
@@ -38,6 +39,9 @@ logo_data_url = f"data:image/png;base64,{logo_base64}" if logo_base64 else ""
 
 mascot_base64 = get_base64_image(MASCOT_IMAGE_PATH)
 mascot_data_url = f"data:image/png;base64,{mascot_base64}" if mascot_base64 else ""
+
+about_base64 = get_base64_image(ABOUT_IMAGE_PATH)
+about_data_url = f"data:image/png;base64,{about_base64}" if about_base64 else ""
 
 CATEGORY_CARDS = [
     {
@@ -283,9 +287,40 @@ st.markdown(
         0%, 100% {{ transform: translateY(0); }}
         50% {{ transform: translateY(-10px); }}
     }}
-    @keyframes bubblePop {{
-        from {{ opacity: 0; transform: scale(0.8) translateY(6px); }}
-        to {{ opacity: 1; transform: scale(1) translateY(0); }}
+
+    /* About Us card in sidebar */
+    .about-card {{
+        border-radius: 12px;
+        background: linear-gradient(160deg, rgba(61,90,128,0.10), rgba(255,255,255,0.03));
+        border: 1px solid rgba(255,255,255,0.08);
+        padding: 1rem 1rem 0.4rem 1rem;
+        margin-bottom: 0.8rem;
+        text-align: center;
+        animation: fadeIn 0.8s ease-in-out;
+    }}
+    .about-card img {{
+        width: 118px;
+        margin: 0 auto 0.4rem auto;
+        display: block;
+        filter: drop-shadow(0 6px 10px rgba(0,0,0,0.35));
+        animation: aboutFloat 3s ease-in-out infinite;
+    }}
+    .about-card-title {{
+        font-weight: 700;
+        font-size: 1.05rem;
+        color: #eaecef;
+        margin-bottom: 0.3rem;
+    }}
+    .about-card-text {{
+        font-size: 0.82rem;
+        color: #b7bcc3;
+        line-height: 1.35rem;
+        text-align: left;
+        margin-bottom: 0.6rem;
+    }}
+    @keyframes aboutFloat {{
+        0%, 100% {{ transform: translateY(0) rotate(0deg); }}
+        50% {{ transform: translateY(-8px) rotate(-2deg); }}
     }}
     </style>
     """,
@@ -314,11 +349,25 @@ st.markdown(hero_html, unsafe_allow_html=True)
 
 #Sidebar
 with st.sidebar:
-    st.header("About")
+    about_img_html = f'<img src="{about_data_url}" />' if about_data_url else ""
+    about_html = (
+        '<div class="about-card">'
+        f'{about_img_html}'
+        '<div class="about-card-title">About Us</div>'
+        '<div class="about-card-text">'
+        "Ella Tourism Assistant is a small AI travel guide built for Ella, "
+        "Sri Lanka. Instead of digging through scattered blogs and outdated "
+        "guidebooks, just ask a question in plain English and get a clear, "
+        "source-backed answer about attractions, hotels, transport, and "
+        "local culture."
+        '</div>'
+        '</div>'
+    )
+    st.markdown(about_html, unsafe_allow_html=True)
+
     st.markdown(
         """
-This assistant answers questions about visiting **Ella, Sri Lanka**
-using a small multi-agent system:
+This assistant runs on a small multi-agent system:
 
 - **Agent 1 — Router** (`Llama 3.1 8B` via Groq)
   Classifies your question and refines it for search.
