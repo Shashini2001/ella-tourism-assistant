@@ -34,7 +34,7 @@ Agent 2 consumes as its input.
 
 ### Sequence Diagram - Agent-to-Agent Communication
 
-<img width="539" height="365" alt="image" src="https://github.com/user-attachments/assets/7f38b229-d287-4c49-926b-b5a777531895" />
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/7f38b229-d287-4c49-926b-b5a777531895" />
 
 
 ## 3. Agentic Design Patterns (3 required, 4 implemented)
