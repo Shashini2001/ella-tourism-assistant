@@ -229,6 +229,6 @@ good workflow, as requested in the brief.
 - This is not a booking or safety-critical system.
 
   ---
-  12 **Live Demo:**
+  ## 12. Live Demo
   
   https://ella-tourism-assistant-5geelegesaumkducjf7tk8.streamlit.app/
