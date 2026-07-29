@@ -1,5 +1,8 @@
 # 🏞️ Ella Tourism Information Assistant
 
+<img width="559" height="326" alt="image" src="https://github.com/user-attachments/assets/18eac88e-a495-4e07-851a-c9499955d98b" />
+
+
 A multi-agent RAG application that answers traveler questions about **Ella, Sri Lanka** —
 attractions, hotels, transport, and local culture — built to satisfy an assignment
 brief requiring: 2+ agents, 3+ agentic design patterns, 2+ LLMs, a RAG system with
