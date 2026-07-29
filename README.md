@@ -1,5 +1,8 @@
 # 🏞️ Ella Tourism Information Assistant
 
+<img width="559" height="326" alt="image" src="https://github.com/user-attachments/assets/18eac88e-a495-4e07-851a-c9499955d98b" />
+
+
 A multi-agent RAG application that answers traveler questions about **Ella, Sri Lanka** —
 attractions, hotels, transport, and local culture — built to satisfy an assignment
 brief requiring: 2+ agents, 3+ agentic design patterns, 2+ LLMs, a RAG system with
@@ -20,8 +23,9 @@ covering attractions, hotels, transport, and culture (see `/data`).
 ---
 
 ## 2. System Architecture
-![alt text](../image-1.png)
-!
+
+<img width="500" height="600" alt="image-1" src="https://github.com/user-attachments/assets/d59aec52-97a7-4188-8295-bbef90d1b14d" />
+
 
 ### Why two agents, not one?
 Splitting query understanding from answer generation lets us use a small, fast,
@@ -33,7 +37,8 @@ Agent 2 consumes as its input.
 
 ### Sequence Diagram - Agent-to-Agent Communication
 
-![alt text](../image.png)
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/7f38b229-d287-4c49-926b-b5a777531895" />
+
 
 ## 3. Agentic Design Patterns (3 required, 4 implemented)
 
