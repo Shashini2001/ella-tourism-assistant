@@ -21,7 +21,7 @@ covering attractions, hotels, transport, and culture (see `/data`).
 
 ## 2. System Architecture
 
-<img width="500" height="362" alt="image-1" src="https://github.com/user-attachments/assets/d59aec52-97a7-4188-8295-bbef90d1b14d" />
+<img width="500" height="600" alt="image-1" src="https://github.com/user-attachments/assets/d59aec52-97a7-4188-8295-bbef90d1b14d" />
 
 
 ### Why two agents, not one?
