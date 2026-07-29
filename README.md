@@ -135,8 +135,9 @@ pip install -r requirements.txt
 
 Copy `.env.example` to `.env` and fill in:
 ```
-GROQ_API_KEY=g
-OPENROUTER_API_KEY=
+GROQ_API_KEY
+OPENROUTER_API_KEY
+
 ```
 
 ### Step 3 — Build the knowledge base (run once)
@@ -166,8 +167,8 @@ streamlit run app.py
    the entry point.
 4. Under **Settings → Secrets**, add:
    ```toml
-   GROQ_API_KEY = ""
-   OPENROUTER_API_KEY = ""
+   GROQ_API_KEY 
+   OPENROUTER_API_KEY 
 
    ```
 5. Deploy. Streamlit Cloud will install `requirements.txt` and launch the app.
