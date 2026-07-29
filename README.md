@@ -24,7 +24,7 @@ covering attractions, hotels, transport, and culture (see `/data`).
 
 ## 2. System Architecture
 
-<img width="500" height="600" alt="image-1" src="https://github.com/user-attachments/assets/d59aec52-97a7-4188-8295-bbef90d1b14d" />
+<img width="600" height="700" alt="image-1" src="https://github.com/user-attachments/assets/d59aec52-97a7-4188-8295-bbef90d1b14d" />
 
 
 ### Why two agents, not one?
@@ -37,7 +37,7 @@ Agent 2 consumes as its input.
 
 ### Sequence Diagram - Agent-to-Agent Communication
 
-<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/7f38b229-d287-4c49-926b-b5a777531895" />
+<img width="1000" height="700" alt="image" src="https://github.com/user-attachments/assets/7f38b229-d287-4c49-926b-b5a777531895" />
 
 
 ## 3. Agentic Design Patterns (3 required, 4 implemented)
