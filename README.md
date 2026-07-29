@@ -1,5 +1,6 @@
 # 🏞️ Ella Tourism Information Assistant
 
+
 <img width="559" height="326" alt="image" src="https://github.com/user-attachments/assets/18eac88e-a495-4e07-851a-c9499955d98b" />
 
 
