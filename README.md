@@ -226,3 +226,8 @@ good workflow, as requested in the brief.
 - No live weather or train-schedule API is integrated; this is a text-based RAG
   assistant, not a real-time data service.
 - This is not a booking or safety-critical system.
+
+  ---
+  12 **Live Demo:**
+  
+  https://ella-tourism-assistant-5geelegesaumkducjf7tk8.streamlit.app/
