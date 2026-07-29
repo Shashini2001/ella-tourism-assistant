@@ -122,7 +122,7 @@ ella-tourism-assistant/
 
 ### Step 1 — Clone and install
 ```bash
-git clone https://github.com/<your-username>/ella-tourism-assistant.git
+git clone https://github.com/shashini2001/ella-tourism-assistant.git
 cd ella-tourism-assistant
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
