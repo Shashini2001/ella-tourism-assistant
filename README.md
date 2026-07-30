@@ -229,7 +229,17 @@ good workflow, as requested in the brief.
   assistant, not a real-time data service.
 - This is not a booking or safety-critical system.
 
-  ---
-  ## 12. Live Demo
+ ---
+ 
+## 12. Live Streamlit Community Cloud URL
   
   https://ella-tourism-assistant-5geelegesaumkducjf7tk8.streamlit.app/
+  
+ ---
+
+---
+## 13. Demo Video Link
+
+ https://drive.google.com/file/d/1SucdqLzdqzb8lBX6RJjmbV_E_OM6LHsT/view?usp=sharing
+ 
+---
