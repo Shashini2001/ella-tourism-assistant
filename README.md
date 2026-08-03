@@ -26,7 +26,7 @@ covering attractions, hotels, transport, and culture (see `/data`).
 ## 2. System Architecture
 
 <img width="600" height="700" alt="image-1" src="https://github.com/user-attachments/assets/d59aec52-97a7-4188-8295-bbef90d1b14d" />
-#draw.io
+<center>draw.io</center>
 
 ### Why two agents, not one?
 Splitting query understanding from answer generation lets us use a small, fast,
@@ -39,7 +39,7 @@ Agent 2 consumes as its input.
 ### Sequence Diagram - Agent-to-Agent Communication 
 
 <img width="1000" height="700" alt="image" src="https://github.com/user-attachments/assets/7f38b229-d287-4c49-926b-b5a777531895" />
-#draw.io
+<center>draw.io</center>
 
 
 ## 3. Agentic Design Patterns (3 required, 4 implemented)
